@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D8076"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo2" />
+
+        <ImageView
+            android:id="@+id/imgUser"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/user1"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="24dp"
+            android:scaleType="centerInside" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <!-- Spinner Avatar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textVi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Photo:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinnerAvat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:spinnerMode="dropdown"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColor="#FFFFFF"
+                    android:dropDownWidth="match_parent" />
+            </LinearLayout>
+
+            <!-- Spinner Role -->
+
+            <!-- Nom Input -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/menuUserRole"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nom:"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/editUsername"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:hint="Votre nom"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#AAAAAA"
+                    android:textColorHint="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Email Input -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textViewMai"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Email:"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="#AAAAAA"
+                    android:hint="Votre email"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Mot de passe -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textPass1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mot de passe:"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/passwordUser1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="#AAAAAA"
+                    android:hint="Choisissez un mot de passe"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textColorHint="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Confirmation Mot de Passe -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textPas1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Confirmation:"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/passwordUse2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="#AAAAAA"
+                    android:hint="Confirmez votre mot de passe"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textColorHint="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnUpdate"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/btn_modif_user" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

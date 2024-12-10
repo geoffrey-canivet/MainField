@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_field">
+
+    <fragment
+        android:id="@+id/nav_field"
+        android:name="com.example.mainfieldmanager.fragments.FieldFragment"
+        android:label="Mon champ"
+        tools:layout="@layout/fragment_field" />
+    <fragment
+        android:id="@+id/nav_updateUser"
+        android:name="com.example.mainfieldmanager.fragments.UpdateUserFragment"
+        android:label="Mon profil"
+        tools:layout="@layout/fragment_update_user" />
+    <fragment
+        android:id="@+id/nav_admin"
+        android:name="com.example.mainfieldmanager.fragments.AdminFragment"
+        android:label="Menu admin"
+        android:visible="true"
+        tools:layout="@layout/fragment_admin" />
+    <fragment
+        android:id="@+id/nav_trophee"
+        android:name="com.example.mainfieldmanager.fragments.TropheeFragment"
+        android:label="Mes trophées"
+        tools:layout="@layout/fragment_trophee" />
+</navigation>

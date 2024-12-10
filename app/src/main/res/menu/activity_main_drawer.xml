@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:title="Mon menu">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_field"
+                    android:icon="@drawable/monchampico"
+                    android:title="Mon champ" />
+
+                <item
+                    android:id="@+id/nav_trophee"
+                    android:icon="@drawable/trophy_solid"
+                    android:title="Mes trophées" />
+
+                <item
+                    android:id="@+id/nav_updateUser"
+                    android:icon="@drawable/monprofilico"
+                    android:title="Mon profil" />
+
+                <item
+                    android:id="@+id/deconnexion"
+                    android:icon="@drawable/disconnect"
+                    android:title="Déconnexion" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:title="VIP">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_admin"
+                    android:icon="@drawable/admin2"
+                    android:title="Administrateur" />
+            </group>
+        </menu>
+    </item>
+</menu>

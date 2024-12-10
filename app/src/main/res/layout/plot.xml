@@ -1,0 +1,30 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4d8076"
+    android:backgroundTint="#4d8076">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- ImageView pour afficher l'image -->
+        <ImageView
+            android:id="@+id/item_plot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/plot_empty2" />
+
+        <!-- ProgressBar ronde superposée -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="gone" />
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

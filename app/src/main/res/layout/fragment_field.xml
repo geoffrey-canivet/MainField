@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FieldFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4D8076"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/logo2" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/borderTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/border_top" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerField"
+                android:layout_width="match_parent"
+                android:layout_height="318dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#D1621E"
+                android:backgroundTint="#4d8076"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/borderBottm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/border_bottom" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+
+            <!-- ImageView avec alignement centré -->
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="122dp"
+                android:layout_height="33dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/background_fonds_vide" />
+
+            <!-- TextView superposé à l'ImageView -->
+            <TextView
+                android:id="@+id/textViewBanque"
+                android:layout_width="122dp"
+                android:layout_height="33dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="0 €"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:gravity="center" />
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="5 sec"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/btn_carrot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="58dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/btnmin_carrot" />
+
+                    <TextView
+                        android:id="@+id/revenuCarrot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="10 €"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="6 sec"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/btn_potato"
+                            android:layout_width="wrap_content"
+                            android:layout_height="58dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/btnmin_potato" />
+
+                        <TextView
+                            android:id="@+id/revenuPotato"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="50 €"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="7 sec"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/btn_tomato"
+                            android:layout_width="wrap_content"
+                            android:layout_height="58dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/btnmin_tomato" />
+
+                        <TextView
+                            android:id="@+id/revenuTomato"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="100 €"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="8 sec"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/btn_turnip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="64dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/btnmin_turnip" />
+
+                        <TextView
+                            android:id="@+id/revenuTurnip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="200 €"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/addPlot"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:src="@drawable/btnmin_boutique" />
+                    <TextView
+                        android:id="@+id/txtPrixPlot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:text="TextView"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

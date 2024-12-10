@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GroupTitleStyle" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">#FFFFFF</item> <!-- Couleur blanche -->
+        <item name="android:textSize">16sp</item> <!-- Ajuster la taille -->
+        <item name="android:textStyle">bold</item> <!-- Texte en gras, optionnel -->
+    </style>
+</resources>
